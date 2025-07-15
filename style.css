@@ -1,0 +1,85 @@
+/* 基本設定 */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+/* コンテナ */
+.container {
+    background: white;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+}
+
+/* 画面の表示・非表示 */
+.screen { display: none; }
+.screen.active { display: block; }
+
+/* テキスト */
+h1 { font-size: 1.8rem; margin-bottom: 1.5rem; }
+h2 { font-size: 1.5rem; margin-bottom: 2rem; line-height: 1.4; }
+#result-text {
+    font-size: 1.6rem;
+    font-weight: bold;
+    min-height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+#explanation-text {
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.7;
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+/* ボタン */
+button {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+button:active { transform: scale(0.98); }
+.choice-button {
+    background-color: #007bff;
+    margin-top: 1rem;
+}
+.choice-button:hover { background-color: #0056b3; }
+
+/* 結果画面のボタングループ */
+.button-group {
+    display: flex;
+    gap: 1rem;
+}
+.button-group button { flex: 1; }
+#restart-button { background-color: #6c757d; }
+#restart-button:hover { background-color: #5a6268; }
+#explanation-button { background-color: #17a2b8; }
+#explanation-button:hover { background-color: #138496; }
+
+#start-button, #back-button {
+    background-color: #007bff;
+}
+#start-button:hover, #back-button:hover {
+    background-color: #0056b3;
+}
